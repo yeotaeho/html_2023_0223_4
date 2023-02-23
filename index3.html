@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산들해반찬</title>
+    <style>
+      html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}body { line-height: 1;}ol, ul { list-style: none;}blockquote, q { quotes: none;}blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;}table { border-collapse: collapse; border-spacing: 0;}
+
+      #header {width:100%; height:192.95px; background-color: beige; margin:0 auto;}
+      #header > .box {width:100%; height:42px; background-color: #3c8461;}
+      #header > .box > a {text-align: center; text-decoration: none; margin: 0px 0px 0px 0px; color: #fff; display: block; font-size: 15px large; padding:13px 0px 0px 0px;}
+
+      /*로그인*/
+      #header > .box2 {width:1160px; height:97px; margin:0 auto; background-color:gold;}
+      .box2 > .top {width:182px; height:31px; background-color:#FFFFDE; float:left; margin:10px 0px 0px 0px; border-radius:15px;}
+      .box2 > .top > p {font-size:13px; margin:10px; color:#828282;}
+      .box2 > .top > p > span {color:#3c8461;}
+
+      .login {width:171.58px; height:30px; background-color: brown; float:right; margin:10px 10px 0px 0px;}
+      .login > ul > li {color:#ddd; float:left; margin:5px 10px 0px 0px;}
+      .login > ul > li > a {text-decoration:none; color:#ddd; font-size: 10px;}
+
+      /*로고*/
+      #logo {width:270px; height:62px; background-color: aquamarine; margin:0 auto; padding: 30px 0px 0px;}
+      #logo > a > img {width:100%; height:100%;}
+
+      /*네비*/
+      #header > nav {width:1160px; height:53.95px; background-color:skyblue; margin:0 auto;}
+      nav > ul > li {float:left; margin:17px 30px 0px 0px; color:#303030; font-size:16px; font-weight: bold;}
+      nav > ul > li > a {text-decoration:none;color:#303030;}
+      nav > ul > li > a:hover {color:#3c8461;}
+      nav > .textbox > .textbox2 {float:right; padding:0px 10px 0px 20px; width:170px; height:36px; margin:5px 0px 0px 0px; border-radius:20px; border:0; background-color:#F6F6F6;}
+      nav > .textbox > .image {width:20px; height:19px; float:right; margin:15px 70px 0px 0px}
+
+
+      /*이미지*/
+      #slider {width:100%; height:347px; background-color:#eee;}
+      #slider > #imgbox > a > img {width:100%; height:347px; background-color:#eee;}
+
+
+      #container {width:100%; height:8144.61px; background-color:antiquewhite; margin:0 auto;}
+
+      /*이미지2*/
+      #imgbox2 {width:1450px; height:230px; background-color:skyblue; padding:50px 0px 0px 0px; margin:0 auto;}
+      #imgbox2 > .img2 {width:590px; height:180px; background-color:gold; float:left; margin:0px 0px 0px 87px;}
+      #imgbox2 > .img2 > a > img {width:100%; height:100%;}
+
+      /*이미지3*/
+      #imgbox3 {width:1450px; height:846px; background-color:gold; padding:100px 0px; margin:0 auto;}
+      #imgbox3 > h1 {text-align:center; font-size:40px; font-weight: bold;}
+      .menu {width:1160px; height:73px; background-color:#ddd; margin:0 auto;}
+      .menu > ul {margin:30px 0px 0px 170px;}
+      .menu > ul > a {float:left; margin:15px 0px 0px 15px; text-decoration:none; background-color:#f7f7f7; padding:17px 22px; border-radius:20px;}
+      .menu > ul > a > li { color:#828282; font-size:19px;}
+      .menu > ul > a:hover {background-color:#3c8461; color:#f7f7f7;}
+      .menu > ul > a > li:hover {color:#f7f7f7;}
+      #list {width:1160px; height:441px; background-color:skyblue; margin:0 auto; padding:36px 0px 0px;} 
+      #list > .foodimg {width:210px; height:280px; background-color:#ddd; float:left; margin:0px 0px 0px 18px;}
+      #list > .foodimg > a > img {width:100%; height:100%;}
+      #textbox > .text {width:210px; height:125px; background-color:#eee; float:left; margin:0px 0px 0px 18px; padding:12px 0px 0px;}
+      #textbox > .text > h5 {font-size:13px; color:#303030;}
+      #textbox > .text > p {font-size:27px; color:#046142; padding:15px 0px 0px;}
+      #textbox > .text > p > span {font-size:20px;}
+      #textbox > .text > h6 {font-size:13px; padding:15px 0px 0px; color:#828282;}
+      #textbox > .text > .icon {float:right; margin:-10px 5px 0px 0px}
+      #textbox > .text > .icon > a > img {width:40px; height:40px;}
+
+
+      hr {margin:170px 0px 0px 0px; width: 1450px;}
+      #a {margin:0 auto;}
+      #b {margin:0 auto;}
+      #c {margin:0 auto;}
+
+      /*이미지4*/
+      #best {width:100%; height:841px; padding:100px 0px 60px; background-color:#F5FCF4;}
+      #best > h1 {font-size:30px; text-align: center; color:#303030; font-weight: bold; background-color: #046142;}
+      #best > p {text-align: center; padding:15px 0px 0px; color: #828282; font-size:16px; background-color: #046142;}
+      #best >.bestimg {width:1160px; height:557px; background-color:cadetblue; margin:0 auto; padding:0px 0px 11px;}
+      #best >.bestimg > .bestimgbox {width:260px; height:340px; background-color: #046142; float:left; margin:25px 0px 0px 25px;}
+      #best >.bestimg > .textbox2 > .text2 {width:260px; height:140px; background-color:#ddd; float:left; padding:12px 15px 26px; box-sizing: border-box
+        ;margin:0px 0px 0px 25px ;}
+
+      /*이미지5*/
+      #new {width:1160px; height:760px; padding:100px 0px 0px 0px; background-color: #F5FCF4 ; margin:0 auto;}
+      #new > h1 {font-size:30px; text-align: center; color:#303030; font-weight: bold; background-color: #046142;}
+      #new > p {text-align: center; padding:15px 0px 0px; color: #828282; font-size:16px; background-color: #046142;}  
+      #new > .newbox {width:1160px; height:455px; background-color: #3c8461;}
+      #new > .newbox > .newboxa {width:210px; height:280px; background-color:#ddd; float:left; margin:0px 0px 0px 18px;}
+      #new > .newbox > .textbox3 > .text3 {width:210px; height:125px; background-color:#eee; float:left; margin:0px 0px 0px 18px; padding:12px 0px 0px;}
+
+      /*작은이미지1*/
+      #imgbox4 {width:1160px; height:160px; background-color: #FFFFDE; margin:0 auto;}
+
+      /*이미지6*/
+      #best2 {width:1160px; height:1000px; background-color: #3c8461; margin:0 auto; padding:100px 0px;}
+      #best2 > h1 {font-size:30px; text-align: center; color:#303030; font-weight: bold; background-color: #046142;}
+      #best2 > p {text-align: center; padding:15px 0px 0px; color: #828282; font-size:16px; background-color: #046142;}
+      #best2 > .bestimg2 {width:1160px; height:896px; background-color: #F6F6F6; padding:30px 0px 0px;}  
+      #best2 > .bestimg2 > .bestimgbox2 {width:350px; height:360px; background-color: #ddd; float:left; margin:0px 0px 0px 27px;}
+      #best2 > .bestimg2 > .text4 > .textbox4 {width:350px; height:130px; background-color: antiquewhite; float: left; margin:0px 0px 0px 27px;}
+      #best2 > .bestimg2 > .menubox > ul {width:350px; height:340px; float:left; background-color: #FFFFDE; margin:0px 0px 0px 27px;}
+
+
+      /*큰이미지*/
+      #bigimg {width:100%; height:490px; background-color:rgb(70, 120, 122); background-image:url("#") ;
+       background-position: center; background-size: cover;}
+      #bigimg > .bigimgbox {margin:0 auto; width: 500px; height:300px;}
+
+      /*이야기*/
+      #story {width:1160px; height:790px; background-color: #F5FCF4; margin:0 auto; padding:100px 0px;}
+      #story > h1 {text-align:center; font-size:40px; font-weight: bold;}
+      #story > .storyimg {width:360px; height:330px; background-color: #ddd; float:left; margin:0px 0px 0px 19px;}
+      #story > .storytext > .storytextbox {width:360px; height:100px; background-color: aquamarine; float: left; margin:0px 0px 0px 19px;}
+    
+    /*작은 이미지2*/
+      #imgbox5 {width:1000px; height:160px; background-color: rgb(185, 170, 150); margin:590px 0px 0px 76px;} 
+
+      /*이미지7*/
+       #con {width:100%; height:594px; padding:80px 0px 50px; background-color: azure; margin:0 auto;}
+       #con > h1 {font-size:30px; text-align: center; color:#303030; font-weight: bold; background-color: #046142;}
+       #con > p {text-align: center; padding:15px 0px 35px; color: #828282; font-size:16px; background-color: #046142;}
+       #con > .conimg {width:1160px; height:420px; background-color: aquamarine; margin:0 auto;}
+       #con > .conimg > .conimgbox {width:210px; height:250px; background-color:#ddd; float:left; margin:0px 0px 0px 18px;}
+       #con > .conimg > .context {width:210px; height:105px; background-color:#eee; float:left; margin:0px 0px 0px 18px; padding:12px 0px 0px;}
+
+       /*인스타*/
+       #ins {width:1160px; height:1050px; background-color: aqua; margin:0 auto;}
+       #ins > h1 {font-size:30px; text-align: center; color:#303030; font-weight: bold; background-color: #046142;}
+       #ins > p {text-align: center; padding:15px 0px 35px; color: #828282; font-size:16px; background-color: #046142;}
+       #ins > .imgs {width:950px; height:740px; background-color: burlywood; margin:0 auto;}
+
+
+      #footer {width:1450px; height:481.2px; background-color: silver; margin:0 auto;}
+    </style>
+  </head>
+  <body>
+    <div id="header">
+
+      <div class="box">
+        <a href="#">회원가입하고 할인쿠폰 받아가세요!</a>
+      </div>
+
+      <div class="box2">
+
+        <div class="top">
+          <p>수도권 이외 지역 <span>택배배송</span></p>
+        </div>
+
+        <div class="login">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li>|</li>
+            <li><a href="#">회원가입</a></li>
+            <li>|</li>
+            <li><a href="#">배송안내</a></li>             
+          </ul>
+
+        </div>
+
+        <div id="logo">
+          <a href="#"><img src="https://cdn.imweb.me/thumbnail/20220727/81b7fc77a88ac.png" alt="asd"></a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">=</a></li>
+          <li><a href="#">모든반찬</a></li>
+          <li>|</li>
+          <li><a href="#">인기메뉴</a></li>
+          <li><a href="#">신메뉴</a></li>
+          <li><a href="#">브랜드소개</a></li>
+          <li><a href="#">이용가이드</a></li>         
+          <li><a href="#">커뮤니티</a></li>
+        </ul>
+
+        <div class="textbox">
+          <input type="image" src="https://cdn-icons-png.flaticon.com/512/3856/3856329.png" alt="검색" class="image">
+          <input type="textbox" name="오늘 뭐먹지" class="textbox2" placeholder="오늘 뭐 먹지" autocomplete="off">
+
+        </div>
+      </nav>
+
+    </div>
+
+    <div id="slider">
+
+      <div id="imgbox">
+        <a href="#"><img src="https://cdn.imweb.me/thumbnail/20220726/b5552acff104a.png" alt="ㅁㄴㅇ"></a>
+      </div>
+
+    </div>
+
+    <div id="container">
+
+      <div id="imgbox2">
+        <div class="img2">
+          <a href="#"><img src="https://cdn.imweb.me/thumbnail/20220722/ee1aa84b9d776.jpg" alt="asdf"></a>
+        </div>
+
+        <div class="img2">
+          <a href="#"><img src="https://t1.daumcdn.net/cfile/tistory/23466E3D5652EF5425" alt="asd"></a>
+        </div>
+      </div>
+
+      <div id="imgbox3">
+        <h1>엄마 셋이 추천드려요.</h1>
+        <div class="menu">
+          <ul>
+            <a href="#"><li>1인 메뉴</li></a>
+            <a href="#"><li>어린이</li></a>
+            <a href="#"><li>나물</li></a>
+            <a href="#"><li>밑반찬</li></a>
+            <a href="#"><li>국 찌개</li></a>
+            <a href="#"><li>밀키트</li></a>
+            <a href="#"><li>메인요리</li></a>
+          </ul>
+        </div>
+
+        <div id="list">
+
+          <div class="foodimg">
+            <a href="#"><img src="http://img2.tmon.kr/cdn3/deals/2021/04/02/2137478794/2137478794_front_5ec50166f7.jpg" alt="ㅁㄴㅇ"></a>
+          </div>
+
+
+          <div class="foodimg">
+            <a href="#"><img src="https://image.homeplus.kr/td/63eb09be-d504-4d2a-aad6-92bad9682941" alt="ㅁㄴㅇ"></a>
+          </div>
+
+
+          <div class="foodimg">
+            <a href="#"><img src="https://www.thesoban.com/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/c9f1714a47c8621bd403ba34b772cd5e.png" alt="ㄴㅇㄹ"></a>
+          </div>
+
+
+          <div class="foodimg">
+            <a href="#"><img src="https://tohomeimage.thehyundai.com/PD/PDImages/S/2/1/8/2801001140812_00.jpg?RS=720x864" alt="ㅁㅇ"></a>
+          </div>
+
+
+          <div class="foodimg">
+            <a href="#"><img src="http://m.jinganebanchan.com/web/product/big/202102/767b73939eba3d81f205d2948bfb066a.jpg" alt="ㅁㄴㅇ"></a>
+          </div>
+
+
+          <div id="textbox">
+
+
+            <div class="text">
+
+              <div class="icon">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4379/4379539.png" alt="ㅁㄴㅇ"></a>
+              </div>
+
+              <h5>1인메뉴 골라담기(5% 할인)</h5>
+              <p>3,500<span>원</span></p>
+              <h6>#1인가구#맞벌이#소용량</h6>
+            </div>
+
+
+            <div class="text">
+              <div class="icon">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4379/4379539.png" alt="ㅁㄴㅇ"></a>
+              </div>
+              <h5>오이지 무침1인분</h5>
+              <p>3,700<span>원</span></p>
+              <h6>#국내산고춧가루#국내산오이</h6>
+            </div>
+
+
+            <div class="text">
+              <div class="icon">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4379/4379539.png" alt="ㅁㄴㅇ"></a>
+              </div>
+              <h5>우렁된장찌개1인분</h5>
+              <p>5,600<span>원</span></p>
+              <h6>#영양가득#국내산우렁이</h6>
+            </div>
+
+
+            <div class="text">
+              <div class="icon">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4379/4379539.png" alt="ㅁㄴㅇ"></a>
+              </div>
+              <h5>꽈리고추멸치볶음1인분</h5>
+              <p>4,700<span>원</span></p>
+              <h6>#국내산꽈리고추#매콤향긋</h6>
+            </div>
+
+
+            <div class="text">
+              <div class="icon">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4379/4379539.png" alt="ㅁㄴㅇ"></a>
+              </div>
+              <h5>시래기된장볶음1인분</h5>
+              <p>5,000<span>원</span></p>
+              <h6>#국내산시래기#자연건조#고소한들기름</h6>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+
+      </div>
+
+      <div id="best">
+        <h1>꾸준하게 팔려요.</h1>
+        <p>밥상계의 스테디셀러</p>
+
+        <div class="bestimg">
+
+          <div class="bestimgbox">
+            <img src="" alt="">
+          </div>
+
+
+          <div class="bestimgbox">
+            <img src="" alt="">
+          </div>
+
+
+          <div class="bestimgbox">
+            <img src="" alt="">
+          </div>
+
+
+          <div class="bestimgbox">
+            <img src="" alt="">
+          </div>
+          <div class="textbox2">
+
+            <div class="text2">
+
+            </div>
+
+            <div class="text2">
+
+            </div>
+
+            <div class="text2">
+
+            </div>
+
+            <div class="text2">
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <hr id="a">
+
+      <div id="new">
+        <h1>새로 나왔어요</h1>
+        <p>질리지 않도록 노력할게요</p>
+        <div class="newbox">
+          <div class="newboxa">
+
+          </div>
+          <div class="newboxa">
+
+          </div>
+          <div class="newboxa">
+
+          </div>
+          <div class="newboxa">
+
+          </div>
+          <div class="newboxa">
+
+          </div>
+
+          <div class="textbox3">
+            <div class="text3">
+
+            </div>
+            <div class="text3">
+
+            </div>
+            <div class="text3">
+
+            </div>
+            <div class="text3">
+
+            </div>
+            <div class="text3">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="b">
+
+      <div id="imgbox4">
+        <img src="#" alt="asd">
+      </div>
+
+      <div id="best2">
+        <h1>여기 있어요 밥도둑!</h1>
+        <p>아이부터 어른까지. 반찬부터 요리까지</p>
+        <clasdiv class="bestimg2">
+
+          <div class="bestimgbox2">
+
+          </div>
+          <div class="bestimgbox2">
+
+          </div>
+          <div class="bestimgbox2">
+
+          </div>
+          <div class="text4">
+            <div class="textbox4">
+
+            </div>
+            <div class="textbox4">
+
+            </div>
+            <div class="textbox4">
+
+            </div>
+          </div>
+          <div class="menubox">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          </div>
+      
+      <div id="bigimg">
+        <div class="bigimgbox"><img src="https://image.jtbcplus.kr/data/contents/jam_photo/202107/12/5c07fb00-a8ed-4ac8-a47f-4fae0a3ab609.jpg" alt="sd"></div>
+      </div>
+      <div id="story">
+        <h1>산들해 이야기</h1>
+        <div class="storyimg">
+
+        </div>
+        <div class="storyimg">
+            
+        </div>
+        <div class="storyimg">
+            
+        </div>
+        <div class="storytext">
+            <div class="storytextbox">
+
+            </div>
+            <div class="storytextbox">
+
+            </div>
+            <div class="storytextbox">
+
+            </div>
+        </div>
+        <div id="imgbox5">
+            
+        </div>
+      </div>
+      <div id="con">
+        <h1>고객 생생후기</h1>
+        <p>고객님들의 생생한 후기! 산들해반찬 함게즐겨요</p>
+        <div class="conimg">
+            <div class="conimgbox">
+
+            </div>
+            <div class="conimgbox">
+                
+            </div>
+            <div class="conimgbox">
+                
+            </div>
+            <div class="conimgbox">
+                
+            </div>
+            <div class="conimgbox">
+                
+            </div>
+
+            <div class="context">
+
+            </div>
+            <div class="context">
+                
+            </div>
+            <div class="context">
+                
+            </div>
+            <div class="context">
+                
+            </div>
+            <div class="context">
+                
+            </div>
+        </div>
+        <hr id="c">
+
+        
+      </div>
+      <div id="ins">
+        <h1>인스타그램</h1>
+        <p>정성 가득한 프리미엄 반찬 산들해의 소식을 받아보세요</p>
+        <div class="imgs">
+            <div class="imgss">
+
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
